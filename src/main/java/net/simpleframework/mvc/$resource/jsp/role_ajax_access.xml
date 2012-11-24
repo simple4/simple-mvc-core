@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://simpleframework.net/xsd/default/simple.xsd">
+	<scriptEval>single</scriptEval>
+	<scriptInit>
+		import net.simpleframework.mvc.MVCUtils;
+	</scriptInit>	<importCSS>
+		<value>${MVCUtils.getCssResourcePath(parameter)}/role_ajax_access.css</value>
+	</importCSS>
+	<role>sys_anonymous</role>	<components>
+		<ajaxRequest name="ajaxJobAccess" role="sys_anonymous">
+			<urlForward>role_ajax_access_page.jsp</urlForward>
+		</ajaxRequest>
+		<window name="jobAccessWindow" contentRef="ajaxJobAccess"
+			title="#(role_ajax_access.1)" width="600" height="180">
+		</window>
+	</components>
+</page>

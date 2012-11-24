@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://simpleframework.net/xsd/default/simple.xsd">
+	<role>sys_anonymous</role>
+
+	<components>
+		<ajaxRequest name="ajaxLoginRedirect" role="sys_anonymous">
+			<urlForward>login_win_redirect_page.jsp</urlForward>
+		</ajaxRequest>
+		<window name="loginRedirectWindow" contentRef="ajaxLoginRedirect" title="#(login_win_redirect.0)"
+			width="400" height="300" resizable="true">
+		</window>
+	</components>
+</page>

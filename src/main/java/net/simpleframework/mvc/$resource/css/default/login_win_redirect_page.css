@@ -1,0 +1,21 @@
+.login_win_redirect_page {
+	padding: 3px;
+}
+
+.login_win_redirect_page .simple_toolbar3 {
+	padding: 12px 20px;
+}
+
+.login_win_redirect_page .t {
+	text-align: left;
+	margin-bottom: 3px;
+	padding: 0px 0px 2px 36px;
+	color: #777;
+	border-bottom: 3px double #eee;
+	background: url("images/login.png") no-repeat 0 50%;
+	line-height: 140%;
+}
+
+.login_win_redirect_page .c {
+	text-align: left;
+}
